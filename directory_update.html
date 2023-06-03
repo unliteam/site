@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+    <title>Новости</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2b2b2b">
+    <meta name="description" content="Список всех новостей/обновлений проекта">
+    <meta property="og:title" content="Новости" />
+    <meta property="og:description" content="Список всех новостей/обновлений проекта." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://unli-team.nex-squad.ru/unliteam.gg/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    <style>
+*{
+  box-sizing: border-box;
+  transition:all .1.5s ease-in-out; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 350;
+  color: #fff;
+  margin: 0;
+  background-color: #0f0f0f;
+}
+
+h3 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 120px;
+  font-size: 35px;
+}
+
+.name-news {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight: 50;
+  font-size: 16px;
+  margin-top: -95px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(64, 63, 63);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.container{
+  max-width: 1784px;
+  margin: auto;
+  padding:0 32px; 
+}
+
+.navigation{
+  text-align: center;
+  position: fixed;
+  top:0;
+  width:100%; 
+  z-index:1000000;  
+  padding: 15px 0; 
+  pointer-events:none;   
+}
+
+.header{
+  position:relative; 
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.header .container{
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:center;
+  height:100vh;
+}
+
+.nav__item {
+  display:inline-block;   
+  font-size:20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-burger {
+  display: none;
+  width: 25px;
+  height: 23px; 
+  margin-left: 0;
+  z-index: 101;
+}
+
+.nav-burger__checkbox {
+  display: none;
+}
+
+.navigation .container .col *{
+  pointer-events:auto; 
+}
+
+.navigation ul{
+  padding: 0;
+  margin: 0;
+  list-style:none;
+}
+
+.navigation a{
+  color:#fff;
+  text-decoration: none;    
+}
+
+.navigation a:hover{
+  border-bottom:1px solid #fff;
+}
+
+.navigation ul li:not(:first-of-type):before{
+  content:"| ";
+  color:#fff !important;
+}
+</style>
+</head>
+<body>
+<nav class="navigation">
+    <div class="container">
+        <div class="col">
+            <div class="gamburgers">
+                <input class="nav-burger__checkbox" type="checkbox" id="burger">
+                <label class="nav-burger"></label>
+                <ul class="nav">
+                    <li class="nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="nav__item"><a href="directory_update.html">НОВОСТИ</a></li>
+                    <li class="nav__item"><a href="error.html">ИНСТРУКЦИИ</a></li>
+                    <li class="nav__item"><a href="rules.html">ПРАВИЛА</a></li>
+                    <li class="nav__item"><a href="http://unli-team.nex-squad.ru/unliteam.gallery">ГАЛЕРЕЯ</a></li>
+                    <li class="nav__item"><a href="about.html">О НАС</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<h3>Новости<h3>
+<div class="name-news">
+<p>
+    <span title="четверг, декабрь 2022, 14:26:54">15.12.2022</span>
+     — 
+    <a href="new_way.html" style="color: #aaa">Начало нового пути</a>
+</p>
+<p>
+    <span title="четверг, март 2022, 18:26:54">18.03.2022</span>
+     — 
+    <a href="error.html" style="color: #aaa">Временные трудности</a>
+</p>
+<p>
+    <span title="вторник, март 2022, 19:51:39">01.03.2022</span>
+     — 
+    <a href="error.html" style="color: #aaa">Обновление (1 марта 2022)</a>
+</p>
+<p>
+    <span title="понедельник, февраль 2022, 16:30:57">24.02.2022</span>
+     — 
+    <a href="error.html" style="color: #aaa">vОбновление (24 февраля 2022)</a>
+</p>
+<p>
+    <span title="суббота, январь 2022, 00:02:41">01.01.2022</span>
+     — 
+    <a href="error.html" style="color: #aaa">Новогоднее обновление</a>
+</p>
+<p>
+    <span title="вторник, декабрь 2021, 15:10:43">14.12.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Техническое обслуживание</a>
+</p>
+<p>
+    <span title="среда, декабрь 2021, 17:21:04">01.12.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Набор в персонал</a>
+</p>
+<p>
+    <span title="вторник, ноябрь 2021, 10:42:56">09.11.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Внеплановое обновление</a>
+</p>
+<p>
+    <span title="суббота, октябрь 2021, 19:17:49">30.10.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Техническое обслуживание</a>
+</p>
+<p>
+    <span title="среда, октябрь 2021, 17:40:16">27.10.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Новые проекты</a>
+</p>
+<p>
+    <span title="понедельник, октябрь 2021, 21:35:59">11.10.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Промежуточное обновление (11 октября 2021)</a>
+</p>
+<p>
+    <span title="четверг, сентябрь 2021, 19:15:43">30.09.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Обновление Sledbuild Classic (30 четверг 2021)</a>
+</p>
+<p>
+    <span title="воскресенье, сентябрь 2021, 11:07:36">24.09.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Итоги работы над оптимизацией</a>
+</p>
+<p>
+    <span title="воскресенье, сентябрь 2021, 14:04:08">19.09.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Повышенине производительности серверов</a>
+</p>
+<p>
+    <span title="суббота, сентябрь 2021, 17:51:07">11.09.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Осеннее обновление (11 сентябрь 2021)</a>
+</p>
+<p>
+    <span title="пятница, август 2021, 13:05:41">27.08.2021</span>
+     — 
+    <a href="error.html" style="color: #aaa">Техническое обслуживание</a>
+</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+*{
+  box-sizing: border-box;
+  transition:all .1.5s ease-in-out; 
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(64, 63, 63);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+}
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 350;
+  margin: 0;
+}
+
+.container{
+  max-width: 1784px;
+  margin: auto;
+  padding:0 32px; 
+}
+
+.navigation{
+  text-align: center;
+  position: fixed;
+  top:0;
+  width:99.8%; 
+  z-index:1000000;
+  background-color: rgba(0, 0, 0, 0.10); 
+  padding: 15px 0; 
+  pointer-events:none;   
+}
+
+.header{
+  position:relative; 
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.header .container{
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:center;
+  height:100vh;
+}
+
+.header .container .col{
+  width: -webkit-fill-available;
+}
+
+.header .container .col:nth-child(1){
+  font-size:27px;
+  text-align: center;
+}
+.header .container .col span{
+  font-weight:900;
+  color: #fff ;
+}
+
+.section{
+  position: relative;
+  -webkit-background-size: cover;
+   background-size: cover;
+  z-index: 2;
+}
+
+.parallax__group:nth-of-type(odd) .section .logo{
+  display:inline-block;
+  text-align:right;
+}
+
+.section .container {
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:left;
+  height:100vh;
+  position: relative;
+}
+
+.section .container .row .col:nth-child(2){
+  padding-bottom: 20px;
+}
+
+.button {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    min-width:120px;
+    font-size: 14px;
+    text-align:center;
+    padding: 8px 36px;
+    text-decoration:none;
+    margin-right:0px; 
+}
+
+.button:hover{
+  border-color:#b0b0b0;
+  color:#b0b0b0; 
+}
+
+ .footer{
+  background-color:rgba(8, 8, 8, 0.51);
+  padding:16px 0; 
+  transform: translate3d(0,0,0);
+}
+
+.footer .container{
+  font-size: 14px;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+}
+
+.footer .container .col{
+  text-align: center;
+  width:25%;
+  margin:auto;
+}
+
+.infoblock{
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  padding-bottom:37px; 
+}
+.infoblock span{
+  font-size:28px;
+  
+}
+.infoblock p{
+  font-size:16px;
+}
+.infoblock a{
+  display: inline-block;
+}
+
+.parallax__group:nth-of-type(odd) .section .infoblock{
+   text-align: right;
+   right: 32px;
+}
+
+.carousel{
+  margin-bottom:20px; 
+  position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax__group:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none
+}
+
+.parallax__group:nth-of-type(even):before{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.parallax__group:nth-of-type(odd):before{
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.parallax__group__size{
+  background-size: cover;  
+} 
+
+.nav__item {
+  display:inline-block;   
+  font-size:20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-burger {
+  display: none;
+  width: 25px;
+  height: 23px; 
+  margin-left: 0;
+  z-index: 101;
+}
+
+.nav-burger__checkbox {
+  display: none;
+}
+
+.navigation .container .col *{
+  pointer-events:auto; 
+}
+
+.navigation ul{
+  padding: 0;
+  margin: 0;
+  list-style:none;
+}
+
+.navigation a{
+  color:#fff;
+  text-decoration: none;    
+}
+.navigation a:hover{
+  border-bottom:1px solid #fff;
+}
+
+.navigation ul li:not(:first-of-type):before{
+  content:"| ";
+  color:#fff !important;
+}
+
+.info{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 9.5%;
+  padding-bottom:20px; 
+}
+.info a{
+  display: inline-block;
+}
